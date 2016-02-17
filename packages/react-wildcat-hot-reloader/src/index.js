@@ -20,12 +20,11 @@ HotReloader.prototype = {
 
         self.clientImportedModules = [];
 
-        self.Loader.import = function customImport() {
-            var args = arguments;
+        self.Loader.import = function customImport(...args) {
             self.clientImportedModules.push(args[0]);
 
             return self.originalImportFn.apply(
-                self.Loader, arguments
+                self.Loader, args
             ).catch(
                 function customImportError(err) {
                     self.lastFailedImport = args;

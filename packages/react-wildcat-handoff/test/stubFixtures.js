@@ -268,7 +268,7 @@ exports.prefetchedRoutes = {
     )
 };
 
-exports.developmentPayload = `System.import("react-wildcat-hot-reloader")`;
+exports.developmentPayload = 'System.import("react-wildcat-hot-reloader")';
 exports.hydratedPayload = `__INITIAL_DATA__ = {"${exports.prefetchedDataKey}":${JSON.stringify(exports.prefetchedData)}};`;
 
 exports.__REACT_ROOT_ID__ = "__REACT_ROOT_ID__";
