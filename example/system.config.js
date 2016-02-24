@@ -703,7 +703,7 @@ System.config({
       "systemjs-json": "github:systemjs/plugin-json@0.1.0",
       "url": "github:jspm/nodelibs-url@0.1.0"
     },
-    "npm:history@1.17.0": {
+    "npm:history@2.0.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "deep-equal": "npm:deep-equal@1.0.1",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -1152,7 +1152,7 @@ System.config({
     "npm:react-router@2.0.0": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "history": "npm:history@1.17.0",
+      "history": "npm:history@2.0.0",
       "invariant": "npm:invariant@2.2.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
       "warning": "npm:warning@2.1.0"
@@ -1175,7 +1175,7 @@ System.config({
       "cookies-js": "npm:cookies-js@1.2.2",
       "debounce": "npm:debounce@1.0.0",
       "exenv": "npm:exenv@1.2.0",
-      "history": "npm:history@1.17.0",
+      "history": "npm:history@2.0.0",
       "isomorphic-fetch": "npm:isomorphic-fetch@2.2.1",
       "match-media-mock": "npm:match-media-mock@0.1.0",
       "parse-domain": "npm:parse-domain@0.2.0",
