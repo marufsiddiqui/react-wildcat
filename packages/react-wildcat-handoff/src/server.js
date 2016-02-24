@@ -1,4 +1,4 @@
-decodeURI()"use strict";
+"use strict";
 
 const serverRender = require("./utils/serverRender.js");
 const getDomainRoutes = require("./utils/getDomainRoutes.js");
