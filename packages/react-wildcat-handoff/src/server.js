@@ -1,10 +1,10 @@
-"use strict";
+decodeURI()"use strict";
 
 const serverRender = require("./utils/serverRender.js");
 const getDomainRoutes = require("./utils/getDomainRoutes.js");
 
 const createMemoryHistory = require("history").createMemoryHistory;
-var useRouterHistory = require("react-router").useRouterHistory;
+const useRouterHistory = require("react-router").useRouterHistory;
 
 function completeRender(cfg, routes) {
     if (routes) {
