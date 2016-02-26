@@ -5,6 +5,19 @@ set -u
 example=example
 version=$(<VERSION)
 
+# Install modules / packages
+(
+    cd ${example} || exit 1;
+
+    # Install node modules
+    npm install;
+
+    # Install jspm packages
+    jspm install --log warn -y;
+
+    cd ..;
+)
+
 # Set up links
 for directory in packages/*; do
     if [ -d "${directory}" ]; then
@@ -13,10 +26,10 @@ for directory in packages/*; do
         if [ -f "${directory}/package.json" ]; then
             # Link module / package in example
             (
-                cd ${example};
+                cd ${example} || exit 1;
 
                 # Link package to npm
-                npm link ${package};
+                npm link "${package}";
 
                 if [[ "$package" != "react-wildcat" && "$package" != "react-wildcat-test-runners" ]]; then
                     # Link package to jspm
@@ -26,14 +39,3 @@ for directory in packages/*; do
         fi
     fi
 done
-
-# Install remaining modules / packages
-(
-    cd ${example};
-
-    # Install node modules
-    npm install;
-
-    # Install jspm packages
-    jspm install --log warn -y;
-)
